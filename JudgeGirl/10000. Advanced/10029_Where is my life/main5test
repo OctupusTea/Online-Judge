@@ -1,0 +1,38 @@
+echo "Main Program Compiling..."
+gcc -std=c99 -O2 main5.c -o main5
+echo "Main Program Compleing Complete"
+
+
+echo "Testcase 0 :"
+./main5 < 0.in > 0.output
+diff 0.out 0.output
+
+
+echo "Testcase 1 :"
+./main5 < 1.in > 1.output
+diff 1.out 1.output
+
+
+echo "Testcase 2 :"
+./main5 < 2.in > 2.output
+diff 2.out 2.output
+
+
+echo "Testcase 3 :"
+./main5 < 3.in > 3.output
+diff 3.out 3.output
+
+
+echo "Testcase 4 :"
+./main5 < 4.in > 4.output
+diff 4.out 4.output
+
+
+echo "Testcase 5 :"
+./main5 < 5.in > 5.output
+diff 5.out 5.output
+
+
+echo "Testcase 6 :"
+./main5 < 6.in > 6.output
+diff 6.out 6.output
