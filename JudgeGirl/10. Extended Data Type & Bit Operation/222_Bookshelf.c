@@ -82,7 +82,7 @@ int main( void)
         #endif
     }
  
-    char *ptr = &bookshelf;
+    char *ptr = ( char* )&bookshelf;
     for( int i = 7; i > 0; i-- )
     {
         printf( "%hhu ", *( ptr + i ) );
