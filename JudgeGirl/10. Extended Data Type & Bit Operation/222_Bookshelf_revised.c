@@ -7,8 +7,8 @@
 int hasEOF = 0;
  
 int readchar() {
-    static int N = 1<<20;
-    static char buf[1<<20];
+    static int N = 65536;
+    static char buf[65536];
     static char *p = buf, *end = buf;
     if(p == end) {
         if((end = buf + fread(buf, 1, N, stdin)) == buf) {
